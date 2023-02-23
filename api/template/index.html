@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Segmentation</title>
+    <style>
+        body{
+            background-color:darkslategrey;
+        }
+           
+        form{
+            margin-top: 10%;
+            position:absolute;
+            margin-left: 40%;
+            border:2px solid black;
+            padding: 50px;
+            border-style: inset;
+            
+            border-color: black;
+            background-color: grey;
+        }
+        #k{
+            margin-bottom: 20px;
+        }
+        #l{
+            margin-bottom: 20px;
+        }
+
+        #b{
+            background-color: orange;
+            border-color: orange;
+            margin-top: 20px;
+            
+            
+        }
+        p{
+            color:black;
+            border-bottom: 2px solid white;
+            text-align: center;
+            font-weight:800;
+        }
+        a{
+            text-decoration: none;
+            color :black;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <form action="https://vercel-deployment-jenisssshhhh.vercel.app/" method = "POST">
+        <p>Customer Segmentationsdfsdf</p>
+        <label for = "Annual"></label><br>
+        <input type = 'number' placeholder = "Annual income"  id ='k' name = 'a' size="25"><br>
+
+        <label for = "Spending" id = 'l'></label><br>
+        <input type = "number" placeholder = "Spending score" name = "s" size ='25' id ='l'><br>
+
+        <button type = submit id ='b'> Check</button>
+        {% if result %}
+        <p>Customer belongs to segment:{{result}}</p>
+        <button id ='b'><a href="/">Continue</a></button>
+
+        {% endif %}
+      
+
+        
+
+    </form>
+
+</body>
+
+</html>
